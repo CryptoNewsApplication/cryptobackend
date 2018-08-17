@@ -4,6 +4,7 @@
   "description": "Backend for Crypto news application",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "make test"
   },
   "repository": {
@@ -23,6 +24,13 @@
   },
   "homepage": "https://github.com/CryptoNewsApplication/cryptobackend#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto-news-api": "^2.2.0",
+    "express": "^4.16.3",
+    "kcors": "^2.2.2",
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "node-fetch": "^2.2.0",
     "npm": "^6.4.0"
   }
 }
