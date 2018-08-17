@@ -1,0 +1,28 @@
+{
+  "name": "cryptobackend",
+  "version": "1.0.0",
+  "description": "Backend for Crypto news application",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryptoNewsApplication/cryptobackend.git"
+  },
+  "keywords": [
+    "node.js",
+    "cryptocurrency",
+    "crypto",
+    "mobile"
+  ],
+  "author": "Alessio Spallino <alessio.spallino.93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryptoNewsApplication/cryptobackend/issues"
+  },
+  "homepage": "https://github.com/CryptoNewsApplication/cryptobackend#readme",
+  "dependencies": {
+    "npm": "^6.4.0"
+  }
+}
