@@ -5,7 +5,7 @@ const cors = require('kcors');
 
 
 // Connect to the CryptoControl API 
-const appId = process.env.APPID || 'INSERT APPID HERE';
+const appId = process.env.APPID || '2371d8a13c6ed5495d93590f41663623';
 const cryptoURI = process.env.MAP_ENDPOINT || "https://cryptocontrol.io/api/v1/public";
 
 const port = process.env.PORT || 9000;
@@ -21,12 +21,12 @@ const fetchArticles = async () => {
     return response ? response.json() : {}
 };
 
-router.get('/generalnews', async ctx => {
+router.get('/news', async ctx => {
     const res = {};
     const articles = await fetchArticles();
 
     res['articles'] = [];
-    res['articles'].push(articles[1].similarArticles);
+    res['articles'].push(articles);
     
     ctx.type = 'application/json; charset=utf-8';
     ctx.body = res;
