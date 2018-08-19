@@ -1,15 +1,19 @@
 # Define from what image we want to build from. Here we will use the latest LTS (long term support) version 8 of node
 FROM node:8
+
 # set environment
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 RUN echo $NODE_ENV
-# app directory
-RUN mkdir /backend
-ADD . /backend
-WORKDIR /backend
-# Install app dependencies
-COPY package*.json ./
-RUN npm i
-EXPOSE 9000
+
+# Install nodemon
+RUN npm install -g nodemon
+
+RUN ls -la
+# Set working dir
+WORKDIR app
+RUN ls -la
+
+
 # command to run your app using CMD
-CMD ["npm", "start"]
+CMD ["nodemon", "src/index.js"]
+EXPOSE 9000
