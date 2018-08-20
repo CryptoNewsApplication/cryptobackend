@@ -21,3 +21,6 @@ gcloud config set project <id>
 # deploy
 gcloud app deploy
 ```
+
+## Ping APIs on Google cloud
+[API link](https://cryptocurrency-news-213821.appspot.com/news) https://cryptocurrency-news-213821.appspot.com/news
