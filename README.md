@@ -12,7 +12,7 @@ docker-compose up crypto-backend-prod
 
 ## Deploy on Google Cloud App Engine
 
-Configure Google Cloud SDK locally, follow instructions here.
+Configure Google Cloud SDK locally, follow instructions [here](https://cloud.google.com/sdk/docs/quickstart-macos) to setup a new project and run the commands below.
 
 ```
 # set project id
