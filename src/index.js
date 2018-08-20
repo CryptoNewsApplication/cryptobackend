@@ -22,14 +22,10 @@ const fetchArticles = async () => {
 };
 
 router.get('/news', async ctx => {
-    const res = {};
     const articles = await fetchArticles();
-
-    res['articles'] = [];
-    res['articles'].push(articles);
     
     ctx.type = 'application/json; charset=utf-8';
-    ctx.body = res;
+    ctx.body = articles;
   
 });
 
